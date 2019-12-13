@@ -1,0 +1,50 @@
+""" This is my first project and now I am going to create a calculator
+not a complex one but a simple one"""
+
+
+print('___________________________________')
+print('___WELCOME TO MY FIRST PROJECT_____')
+print('___________________________________')
+
+project = 'Calculator'
+
+project = "Caluculator"
+print("My %s" % (project))
+print()
+print()
+
+#Let's begin then.
+
+def sum(x,y):
+    return x+y
+
+def minus(x,y):
+    return x-y
+
+def product(x,y):
+    return x*y
+
+def remainder(x,y):
+    return x%y
+
+print('1.Add')
+print('2.Substract')
+print('3.Multiply')
+print('4.Remainder')
+
+choice = input('Pick a number from above(1 /2 3 / 4: ')
+
+num1 = float(input())
+num2 = float(input())
+
+if choice == '1':
+    print(num1, '+', num2, '=',sum(num1,num2))
+
+if choice == '2':
+    print(num1, '-', num2, '=',minus(num1,num2))
+
+if choice == '3':
+    print(num1, '*', num2, '=',product(num1,num2))
+
+if choice == '4':
+    print(num1, '%', num2, '=',remainder(num1,num2))
